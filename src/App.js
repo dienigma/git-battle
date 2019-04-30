@@ -1,12 +1,16 @@
 import React from "react";
 import Header from "./Header";
-
-function App() {
-  return (
-    <div>
-      <Header />
-    </div>
-  );
+import Compare from "./Compare";
+class App extends React.Component {
+  state = {};
+  render() {
+    return (
+      <div>
+        <Header />
+        <Compare />
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -5,7 +5,8 @@ import Button from "@material-ui/core/Button";
 
 const styles = theme => ({
   button: {
-    margin: theme.spacing.unit
+    position: "absolute",
+    top: "50%"
   },
   input: {
     display: "none"
@@ -16,9 +17,16 @@ const Compare = props => {
   const { classes } = props;
 
   return (
-    <Button variant="contained" color="primary" className={classes.button}>
-      Compare
-    </Button>
+    <div style={{ textAlign: "center" }}>
+      <Button
+        variant="contained"
+        color="primary"
+        className={classes.button}
+        onClick={props.handleCompare}
+      >
+        Compare
+      </Button>
+    </div>
   );
 };
 
